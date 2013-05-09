@@ -1,0 +1,135 @@
+BODY 
+{ 
+		FONT-SIZE: 12px; 
+		FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif;
+  		SCROLLBAR-BASE-COLOR: #000000; 
+  		SCROLLBAR-ARROW-COLOR: #000000;
+  		SCROLLBAR-TRACK-COLOR: #000000;
+		SCROLLBAR-FACE-COLOR: #000000;
+		SCROLLBAR-3DLIGHT-COLOR: #000000;
+		SCROLLBAR-HIGHLIGHT-COLOR: #000000;
+		SCROLLBAR-SHADOW-COLOR: #000000;
+		SCROLLBAR-DARKSHADOW-COLOR: #000000;
+  		/*
+  		SCROLLBAR-FACE-COLOR: #000000;
+  		SCROLLBAR-3DLIGHT-COLOR: #000000;
+  		SCROLLBAR-HIGHLIGHT-COLOR: #000000;
+  		SCROLLBAR-SHADOW-COLOR: #000000;
+  		SCROLLBAR-DARKSHADOW-COLOR: #000000;
+  		SCROLLBAR-TRACK-COLOR: #000000;
+
+		*/ 
+
+	        background-image: 		url(/Images/KHLogoHouseOnly.gif);        
+	        background-repeat: 		no-repeat; 
+	        background-position: 		center 100; 
+	        background-attachment: 		fixed 
+ 
+
+
+}
+
+OPTION 
+{ 
+		FONT-SIZE: 12px; 
+		FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif; 
+		BACKGROUND-COLOR: #200000; COLOR: #DDDDDD; 
+}
+
+SELECT 
+{ 
+		FONT-SIZE: 12px; 
+		FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif; 
+		BACKGROUND-COLOR: #2964D6; COLOR: #DDDDDD; 
+}
+
+TEXTAREA 
+{ 
+		FONT-SIZE: 12px; 
+		FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif; 
+		BACKGROUND-COLOR: #FFFFFF; COLOR: #555555; 
+		BORDER-COLOR: #0781D2;
+		BORDER-WIDTH: 2px;
+		BORDER-STYLE: solid;
+}
+
+FORM 
+{ 
+		FONT-SIZE: 12px; 
+		FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif; 
+		BACKGROUND-COLOR: #FFFFFF; COLOR: #DDDDDD; 
+}
+
+
+INPUT
+{ 
+		FONT-SIZE: 12px; 
+		BORDER-STYLE: solid;
+		BORDER-WIDTH: 2px;
+		BORDER-COLOR: #0781D2;
+		FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif; 
+		BACKGROUND-COLOR: #FFFFFF; COLOR: #555555; 
+
+}
+
+
+
+
+A:LINK
+{
+	  COLOR: RGB(0, 100, 200);
+}
+A:VISITED
+{
+	  COLOR: RGB(0, 100, 200);
+} 
+A:ACTIVE
+{
+	  COLOR: RGB(200, 100, 0);
+}
+
+A:HOVER
+{
+	  COLOR: RGB(200, 100, 0);
+
+}
+
+DT 
+{
+// Defined Term
+		FONT-SIZE: 12px; 
+		FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif;
+}
+
+H1, H2, H3, H4, H5, H6, UL, LI
+{
+		FONT-SIZE: 12px; 
+		FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif;
+}
+
+H1
+{
+}
+H2
+{
+}
+H3
+{
+}
+H4
+{
+}
+H5
+{
+}
+H6
+{
+	/* color: rgb(204, 0, 153); */
+}
+
+UL, LI, OL, BLOCKQUOTE, TABLE
+{
+		FONT-SIZE: 12px; 
+		FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif;
+		LINE-SPACING: 5;
+}

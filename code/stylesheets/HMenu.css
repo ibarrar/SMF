@@ -1,0 +1,50 @@
+.menu  			{position: absolute;
+				 font-family: MS Sans Serif;
+				 font-size: 10pt;
+				 background-color: menu;
+				 color: menutext;
+				 border: 2px threedhighlight outset;
+				 cursor: default;
+				 visibility: hidden;
+				 line-height: 140%;}
+
+.visibleMenu	{position: absolute;
+				 font-family: MS Sans Serif;
+				 font-size: 10pt;
+				 background-color: menu;
+				 color: menutext;
+				 border: 2px threedhighlight outset;
+				 cursor: default;
+				 visibility: visible;
+				 line-height: 140%;}
+				 
+.menuItem		{color: menutext;
+				 background-color: menu;
+				 padding-left: 10px;
+				 padding-right: 15px;
+				 text-decoration: none;}
+
+.menuItemOver	{color: highlighttext;
+				 background-color: highlight;
+				 padding-left: 10px;
+ 				 padding-right: 15px;
+ 				 text-decoration: none;}
+				 
+.menuItemOver A	{color: highlighttext;
+				 background-color: highlight;
+				 padding-left: 10px;
+ 				 padding-right: 15px;
+ 				 text-decoration: none;
+				 cursor: default;}
+				 
+.menuItem A		{color: menutext;
+				 background-color: menu;
+				 padding-left: 10px;
+				 padding-right: 15px;
+				 text-decoration: none;
+				 cursor: default;}
+				 
+.more			{font-family: WebDings;
+				 text-align: right;
+				 z-index: 100;
+				 position:relative;}

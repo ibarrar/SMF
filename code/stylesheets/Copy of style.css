@@ -1,0 +1,204 @@
+/*** MSDN Online ***/
+td.mnpGlobalToolbar {
+background:black
+}
+A.mnpGlobalToolbarLink {
+color: red;
+font-size: 10px;
+font-family: verdana;
+background: black
+}
+
+TD, TH { font-size:68%; }
+A:link { color:#003399; }
+A:visited { color:#660099; }
+A:hover { color:#FF3300; }
+A.small
+{
+font-size: 95%;
+text-decoration:underline;
+}
+H1
+{
+font-size:165%;
+margin:0;
+}
+H2
+{
+font-size:125%;
+margin-top:1em; margin-bottom:0px;
+}
+H3
+{
+font-size:115%;
+margin-bottom:0px;
+}
+H4, H5, H6
+{
+font-size:100%;
+margin-bottom:0px;
+}
+P
+{
+line-height:1.5em;
+margin-top:0.5em; margin-bottom:1.0em;
+}
+PRE
+{
+background:#EEEEEE;
+margin-top:1em; margin-bottom:1em; margin-left:0px;
+padding:5pt;
+}
+&nbsp;
+&nbsp;
+HR
+{
+color:#CCCCCC;
+height:1px;
+}
+UL { margin-left:25px; margin-top:10px; margin-bottom:10px; }
+OL { margin-left:25px; margin-top:10px; margin-bottom:10px; }
+UL LI
+{
+line-height:1.5em;
+margin-bottom:0.5em;
+}
+UL LI LI { list-style-type: disc; }
+OL LI { margin-bottom:0.7em; }
+/*** MSDNMag***/
+body
+{
+background:#ffffff;
+font-family:verdana,arial,helvetica;
+margin:0px;
+}
+div.clsDocBody
+{
+margin:0px;
+padding-left: 10px;
+padding-right: 0px;
+padding-top: 0px;
+padding-bottom: 10px;
+}
+div.clsText
+{
+margin:10px;
+}
+UL LI
+{
+line-height:1.2em;
+}
+TH
+{
+FONT-WEIGHT: bold;
+background-Color:#99ccff;
+}
+PRE, PRE.clsCode
+{
+font-size:90%;
+font-family:'courier new',courier,serif;
+}
+&nbsp;
+/*** copyright file***/
+A.clsBackTop,
+A.clsBackTop:visited {
+margin-top:10px; margin-bottom:0px;
+padding-bottom:0px;
+font-size:90%;
+color: #003399;
+}
+/*** article classes ***/
+.articletext
+{
+vertical-align:top;
+}
+SPAN.dropcap
+{
+FONT-SIZE: 225%;
+COLOR: #cc3300;
+FONT-WEIGHT: bold;
+}
+SPAN.QAcap
+{
+FONT-SIZE: 140%;
+COLOR: #cc3300;
+FONT-WEIGHT: bold;
+}
+SPAN.clsLevel
+{
+COLOR: #ffffff;
+FONT-WEIGHT: bold;
+}
+SPAN.clsSum
+{
+COLOR: #000080;
+FONT-WEIGHT: bold;
+}
+.clsHead
+{
+COLOR: #008080;
+FONT-WEIGHT: bold;
+FONT-SIZE: 160%;
+LINE-HEIGHT: 2;
+}
+.clsSubhead
+{
+COLOR: #000080;
+FONT-WEIGHT: bold;
+FONT-SIZE: 115%;
+}
+SPAN.clsSmHead {
+color:#008080;
+FONT-WEIGHT:bold;
+FONT-SIZE:115%;
+}
+SPAN.clsBio
+{
+FONT-SIZE: 90%;
+}
+SPAN.clsInfo
+{
+FONT-SIZE: 90%;
+}
+.clsGloss {
+color:#000080;
+FONT-WEIGHT:bold;
+}
+/*** default pages ***/
+TD.clsLND
+{
+COLOR: red;
+LINE-HEIGHT: 1
+}
+SPAN.functionbartext
+{
+COLOR: #ffffff;
+}
+SPAN.st
+{
+FONT-WEIGHT: bold;
+}
+SPAN.category
+{
+COLOR: #ffffff;
+FONT-WEIGHT: bold;
+VERTICAL-ALIGN:top;
+}
+SPAN.pd
+{
+COLOR: #008080;
+}
+/*** Figure Tags ***/
+.clsFigs {
+FONT-WEIGHT:bold;
+}
+.clsFigure {
+FONT-WEIGHT:bold;
+}
+.clsCap {
+FONT-WEIGHT:bold;
+color:#000080
+}
+.clsCaptxt {
+color:#000080
+}

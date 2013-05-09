@@ -1,0 +1,126 @@
+BODY 
+{ 
+		FONT-SIZE: 12px; 
+		FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif;
+  		SCROLLBAR-BASE-COLOR: #0781D2; 
+  		SCROLLBAR-ARROW-COLOR: #FFD700; 
+  		SCROLLBAR-TRACK-COLOR: #2964D6;
+		SCROLLBAR-FACE-COLOR: #0781D2;
+		SCROLLBAR-3DLIGHT-COLOR: #2964D6;
+		SCROLLBAR-HIGHLIGHT-COLOR: #2964D6;
+		SCROLLBAR-SHADOW-COLOR: #2964D6;
+		SCROLLBAR-DARKSHADOW-COLOR: #2694D6;
+  		/*
+  		SCROLLBAR-FACE-COLOR: #000020; 
+  		SCROLLBAR-3DLIGHT-COLOR: #A997C4; 
+  		SCROLLBAR-HIGHLIGHT-COLOR: #A997C4;
+  		SCROLLBAR-SHADOW-COLOR: #4D445C; 
+  		SCROLLBAR-DARKSHADOW-COLOR: #4D445C;
+  		SCROLLBAR-TRACK-COLOR: #101010;
+
+		*/ 
+}
+
+OPTION 
+{ 
+		FONT-SIZE: 12px; 
+		FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif; 
+		BACKGROUND-COLOR: #200000; COLOR: #DDDDDD; 
+}
+
+SELECT 
+{ 
+		FONT-SIZE: 12px; 
+		FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif; 
+		BACKGROUND-COLOR: #2964D6; COLOR: #DDDDDD; 
+}
+
+TEXTAREA 
+{ 
+		FONT-SIZE: 12px; 
+		FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif; 
+		BACKGROUND-COLOR: #FFFFFF; COLOR: #555555; 
+		BORDER-COLOR: #0781D2;
+		BORDER-WIDTH: 2px;
+		BORDER-STYLE: solid;
+}
+
+FORM 
+{ 
+		FONT-SIZE: 12px; 
+		FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif; 
+		BACKGROUND-COLOR: #FFFFFF; COLOR: #DDDDDD; 
+}
+
+
+INPUT
+{ 
+		FONT-SIZE: 12px; 
+		BORDER-STYLE: solid;
+		BORDER-WIDTH: 2px;
+		BORDER-COLOR: #0781D2;
+		FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif; 
+		BACKGROUND-COLOR: #FFFFFF; COLOR: #555555; 
+
+}
+
+
+
+
+A:LINK
+{
+	  COLOR: RGB(0, 100, 200);
+}
+A:VISITED
+{
+	  COLOR: RGB(0, 100, 200);
+} 
+A:ACTIVE
+{
+	  COLOR: RGB(200, 100, 0);
+}
+
+A:HOVER
+{
+	  COLOR: RGB(200, 100, 0);
+}
+
+DT 
+{
+// Defined Term
+		FONT-SIZE: 12px; 
+		FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif;
+}
+
+H1, H2, H3, H4, H5, H6, UL, LI
+{
+		FONT-SIZE: 12px; 
+		FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif;
+}
+
+H1
+{
+}
+H2
+{
+}
+H3
+{
+}
+H4
+{
+}
+H5
+{
+}
+H6
+{
+	/* color: rgb(204, 0, 153); */
+}
+
+UL, LI, OL, BLOCKQUOTE, TABLE
+{
+		FONT-SIZE: 12px; 
+		FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif;
+		LINE-SPACING: 5;
+}

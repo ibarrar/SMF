@@ -1,0 +1,627 @@
+/*******************************************
+ *Used by    : Advanced Search
+ *             (skills_advancedsearch,pl)
+ *Description: Tab effects for the search box
+ *******************************************/
+	#tabmenusrch {
+		color: #000;
+		border-bottom: 1px solid black;
+		font-face: verdana;
+		margin: 12px 0px 0px px;
+		padding: 0px;
+		z-index: 1;
+		padding-left: 10px }
+
+	#tabmenusrch a.inactive, a.active {
+		color: black;
+		background-color: #99CCFF;
+		border: 1px solid black;
+		padding: 5px 5px 0px 5px;
+		margin: 0px;
+		text-decoration: none; }
+
+	#tabmenusrch a.inactive:visited{
+		color: black;
+		background-color: #99CCFF;
+		border: 1px solid black;
+		padding: 5px 5px 0px 5px;
+		margin: 0px;
+		text-decoration: none; }
+
+	#tabmenusrch a.inactive:visited:hover {
+		color: yellow;
+		background-color: black;}
+
+	#tabmenusrch a.active {
+		background-color: #EEEEEE;
+		border-bottom: 2px solid #EEEEEE;
+		font-weight: bold;
+		color: navy;
+		}
+
+	#tabmenusrch a.inactive:hover {
+		color: yellow;
+		background-color: black;}
+
+	#tabmenuskills {
+		color: #000;
+		border-bottom: 1px solid black;
+		margin: 12px 0px 0px px;
+		padding: 0px;
+		z-index: 1;
+		padding-left: 10px;
+		background-color: EEEEEE;
+		}
+
+	#contentsrchbox {
+		font-type: verdana;
+		text-align: justify;
+		background-color: #EEEEEE;
+		padding: 20px;
+		border: 1px solid black;
+		border-top: none;
+		z-index: 2;	}
+
+	#contentsrch {
+		background-color: FFFFCC; }
+
+	#contentsrch a {
+		color: 0000CC; }
+	#contentsrch a:visited {
+		font-type: verdana;
+		color: 660099;	}
+	#contentsrch a:hover {
+		color: red; }
+
+	#contentsrch a.view {
+		color: 006699	;
+		font-size: xx-small;
+		text-decoration: none;}
+	#contentsrch a.view:visited {
+		color: 006699	;
+		font-size: xx-small;
+		text-decoration: none;}
+	#contentsrch a.view:hover {
+		color: 660033;
+		text-decoration: none;}
+
+/*******************************************
+ *Used by    : Used by Reports and Skill Code Admin
+ *             (skills_rep*.pl and skills_admin*.pl)
+ *Description: Tab effects
+ *******************************************/
+
+	table.tabbgnd,td.tabbgnd,tr.tabbgnd{
+		background-color: EEEEEE;
+		}
+	#tabmenuskills a.inactive, span.active {
+		color: black;
+		background-color: #99CCFF;
+		font-family: verdana;
+		border: 1px solid black;
+		font-size: x-small;
+		padding: 5px 5px 0px 5px;
+		margin: 0px;
+		text-decoration: none; }
+	#tabmenuskills a.inactive:visited{
+		color: black;
+		background-color: #99CCFF;
+		font-family: verdana;
+		border: 1px solid black;
+		font-size: x-small;
+		padding: 5px 5px 0px 5px;
+		margin: 0px;
+		text-decoration: none; }
+
+	#tabmenuskills span.active {
+		background-color: FFFFCC;
+		border-bottom: 3px solid #FFFFCC;
+		font-weight: bold;
+		color: blue;
+		}
+
+	#tabmenuskills a.inactive:hover {
+		color: yellow;
+		background-color: black; }
+
+	#tabmenuskills a.view {
+		color: 006699	;
+		text-decoration: none;}
+
+/*******************************************
+ *Used by    : skills_*.pl
+ *Description: General look of SMF
+ *******************************************/
+
+	/*******************************************
+	 *Description: color of SMF background
+	 *******************************************/
+
+	#skills table {
+		background-color: FFFFCC;
+		}
+
+	#skills {
+		font-size: xx-small;
+		font-family: verdana;
+		background-color: FFFFCC;
+		}
+
+	.forcebgnd{
+		background-color: FFFFFF;
+		}
+
+	/*******************************************
+	 *Description: link format
+	 *Important Note:
+	 * 	In adding additional link format
+	 * pls. arrange them as follows:
+	 * 	1) a:link
+	 * 	2) a:visited
+	 * 	3) a:hover
+	 *
+	 *******************************************/
+
+	/*No Class*/
+	#skills a:link{
+		color: navy;
+		font-family: verdana;
+		}
+	#skills a:visited{
+		color: navy;
+		font-family: verdana;
+		}
+	#skills a:hover{
+		color: orange;
+		font-family: verdana;
+		}
+
+	/*
+	  Class      :   simple
+	  Used by    :   skills_*.pl
+	  Description:   header links of SMF
+	                 (such as Home, Logout)
+	                 and
+	                 footer links of SMF
+	                 (such as Back, Add, Extract Excel)
+	*/
+	#skills a.simple{
+		color: #336699;
+		font-size: xx-small;
+		font-family: verdana;
+		text-decoration: none;
+		}
+	#skills a.simple:visited{
+		color: #336699;
+		font-size: xx-small;
+		font-family: verdana;
+		text-decoration: none;
+		}
+	#skills a.simple:hover{
+		color: orange;
+		font-size: xx-small;
+		font-family: verdana;
+		text-decoration: none;
+		}
+
+	/*
+	  Class      :   simplel
+	  Used by    :   skills_empprofiles.pl and skills_empprofiles(plain).pl
+	  Description:   Change Password Link
+	*/
+	#skills a.simplel{
+		color: #336699;
+		font-size: x-small;
+		font-family: verdana;
+		text-decoration: underline;
+		}
+	#skills a.simplel:visited{
+		color: #336699;
+		font-size: x-small;
+		font-family: verdana;
+		text-decoration: underline;
+		}
+	#skills a.simplel:hover{
+		color: orange;
+		font-size: x-small;
+		font-family: verdana;
+		text-decoration: none;
+		}
+
+	/*
+	  Class      :   control
+	  Used by    :   skills_myprofile.pl,skills_changepswd.pl
+	  Description:   Edit and Change Password links
+	                 found in gradient bars
+	*/
+	#skills a.control{
+		color: FFFFFF;
+		font-size: xx-small;
+		font-family: verdana;
+		text-decoration: none;
+		}
+	#skills a.control:visited{
+		color: FFFFFF;
+		font-family: verdana;
+		text-decoration: none;
+		}
+	#skills a.control:hover{
+		color: yellow;
+		font-size: xx-small;
+		font-family: verdana;
+		text-decoration: underline;
+		}
+
+	/*******************************************
+	 *Used by    : Main Menu
+	 *             (skills_menu,pl)
+	 *Description: Tab effects for the search box
+	 *******************************************/
+
+		/*
+		  Class      :   common
+		  Description:   Format for the description of each links
+		*/
+	#skills .common{
+		color: black;
+		font-size: 0.75em;
+		font-family: verdana;
+		}
+
+		/*
+		  Class      :   main
+		  Description:   formats the table used for the main menu
+		*/
+	#skills .main{
+		color: black;
+		font-size: small;
+		font-family: Sans Serif;
+		}
+
+		/*
+		  Class      :   maintitle
+		  Description:   formats the division of the main menu
+		*/
+	#skills .maintitle{
+		color: navy;
+		font-size: medium;
+		font-family: Sans Serif;
+		}
+
+		/*
+		  Class      :   main
+		  Description:   main menu links
+		*/
+	#skills a.main{
+		color: 6699CC;
+		font-size: x-small;
+		font-family: verdana;
+		text-decoration: none;
+		font-weight: bold;
+		}
+	#skills a.main:visited{
+		color: 6699CC;
+		font-size: x-small;
+		font-family: verdana;
+		text-decoration: none;
+		font-weight: bold;
+		}
+	#skills a.main:hover{
+		color: orange;
+		font-size: small;
+		font-family: verdana;
+		text-decoration: underline;
+		font-weight: bold;
+		}
+
+	/*Common to all*/
+	#skills td{
+		color: black;
+		font-size: x-small;
+		font-family: Sans Serif;
+		vertical-align: center;
+		}
+
+	#skills th{
+		background-color: 99CCFF;
+		font-size: x-small;
+		font-family: Sans Serif;
+		vertical-align: center;
+		white-space : nowrap;
+		}
+
+	#skills .pagetitle{
+		color: 003399;
+		font-size: medium;
+		font-family: Verdana;
+		font-weight: bold;
+		}
+
+	#skills .notes{
+		color: 006699;
+		font-size: xx-small;
+		font-family: Verdana;
+		font-style: normal;
+		}
+
+	#skills .legend{
+		color: navy;
+		font-size: xx-small;
+		font-family: verdana;
+		font-style: normal;
+		}
+
+	#skills .resultnotes{
+		color: navy;
+		font-size: x-small;
+		font-family: verdana;
+		font-style: normal;
+		}
+
+	#skills .warning{
+		color: red;
+		font-size: x-small;
+		font-family: Verdana;
+		font-weight: bold;
+		}
+
+	#skills .result{
+		color: black;
+		font-size: x-small;
+		font-family: verdana;
+		font-style: normal;
+		}
+
+	#skills .resultmsg{
+		color:navy;
+		font-size: 0.8em;
+		font-style: normal;
+		}
+
+	/*
+	  Used by skills_rep*.pl and
+	          result of simplesearch and
+	                    advancedsearch(Emp) and
+	          empprofiles
+	*/
+	#skills .result a.simple{
+		color: 6633FF;
+		font-size: x-small;
+		font-family: verdana;
+		font-style: normal;
+		text-decoration: underline;
+		}
+	#skills .result a.simple:visited{
+		color: 6633FF;
+		font-size: x-small;
+		font-family: verdana;
+		font-style: normal;
+		text-decoration: underline;
+		}
+	#skills td.result a.simple:hover{
+		color: red;
+		font-size: x-small;
+		font-family: verdana;
+		font-style: normal;
+		text-decoration: none;
+		}
+
+	/*Used by skills_repskills.pl*/
+	#skills td.result a.total{
+		color: 660099;
+		font-size: x-small;
+		font-family: verdana;
+		font-weight: bold;
+		text-decoration: underline;
+		}
+	#skills .result a.total:visited{
+		color: 660099;
+		font-size: x-small;
+		font-family: verdana;
+		font-weight: bold;
+		text-decoration: underline;
+		}
+	#skills td.result a.total:hover{
+		color: red;
+		font-size: x-small;
+		font-family: verdana;
+		font-weight: bold;
+		text-decoration: none;
+		}
+
+        /*
+          Used by skills_rep*.pl and
+                  empprofiles and
+                  result of simplesearch and
+                            advancedsearch(Emp)
+                  (for name that are links to individual summary)
+        */
+	#skills .result a.key{
+		color: blue;
+		font-size: x-small;
+		font-family: verdana;
+		font-style: normal;
+		text-decoration: none;
+		}
+	#skills .result a.key:visited{
+		color: blue;
+		font-size: x-small;
+		font-family: verdana;
+		font-style: normal;
+		text-decoration: none;
+		}
+	#skills .result a.key:hover{
+		color: CC0099;
+		font-size: x-small;
+		font-family: verdana;
+		text-decoration: none;
+		}
+
+        /*
+          Used by skills_rep*.pl and
+                  empprofiles and
+                  result of simplesearch and
+                            advancedsearch(Emp)
+                  (for page navigation links)
+        */
+		/*
+		  class: navIN
+		  Description: page not use (NAVigation INactive)
+		*/
+	#skills a.navIN{
+		color: navy;
+		font-size: 0.7em;
+		font-family: verdana;
+		font-style: normal;
+		text-decoration: underline;
+		}
+	#skills a.navIN:visited{
+		color: navy;
+		font-size: 0.7em;
+		font-family: verdana;
+		font-style: normal;
+		text-decoration: underline;
+		}
+	#skills a.navIN:hover{
+		color: 6699CC;
+		font-size: 0.7em;
+		font-family: verdana;
+		font-style: normal;
+		text-decoration: underline;
+		}
+
+		/*
+		  class: navAC
+		  Description: page used (NAVigation ACtive)
+		*/
+	#skills a.navAC{
+		color: navy;
+		font-size: 0.7em;
+		font-family: verdana;
+		font-weight: bold;
+		text-decoration: none;
+		}
+	#skills a.navAC:visited{
+		color: navy;
+		font-size: 0.7em;
+		font-family: verdana;
+		font-weight: bold;
+		text-decoration: none;
+		}
+
+		/*Office combobox label*/
+	#skills .officecmb{
+		color:navy;
+		font-size: x-small;
+		font-family: verdana;
+		font-style: normal;
+		}
+
+		/*Simple Search label for repdetailed and repvisa*/
+	#skills .simsearch{
+		background-color:FFFFCC;
+		width: 80%;
+		font-family:  verdana FFFFFF;		
+		}
+
+	#skills .searchnote{
+		color:black;
+		font-size: 0.9em;
+		font-weight: bold;
+		}
+
+		/*Advanced Search link beside Simple Search Facility for repdetailed and repvisa*/
+	#skills a.asearch{
+		color:navy;
+		font-size: xx-small;
+		text-decoration: underline;
+		}
+	#skills a.asearch:visited{
+		color:navy;
+		font-size: xx-small;
+		text-decoration: underline;
+		}
+	#skills a.asearch:hover{
+		color:red;
+		text-decoration: underline;
+		}
+
+        /*
+          Used by skills_myprofile.pl and
+                  skills_empinfo.pl and
+		  skills_myskills.pl
+          Description:
+          class             Description
+            infotitle         division of information (Employee, Login, Passport...)
+            infofield         field name
+            infoentry         field entry
+            infoexample       field example and notes
+            infoinstruct      field instructions
+            infoskill         column name for skills information header (Proficiency,Year Last Used and Experience)
+            infosubsysnote    the note that appears when employee checks at least one subsystem for a Product Knowledge
+            infosubsys        subsystem name
+	*/
+	#skills .infotitle{
+		color:navy;
+		font-size: 0.9em;
+		font-weight: bold;
+		}
+
+	#skills .infofield{
+		color:black;
+		font-size: 0.8em;
+		font-weight: bold;
+		}
+
+	#skills .infoentry{
+		color:black;
+		font-size: 0.8em;
+		}
+
+	#skills .infoexample{
+		color:black;
+		font-size: 0.8em;
+		}
+
+	#skills .infoinstruct{
+		color:black;
+		font-size: 0.8em;
+		font-weight: bold;
+		}
+
+	#skills .infoskill{
+		color:0066CC;
+		font-size: 0.9em;
+		font-weight: bold;
+		}
+
+	#skills .infosubsysnote{
+		color:0066CC;
+		font-size: 0.7em;
+		font-style: normal;
+		}
+
+	#skills .infosubsys{
+		color:black;
+		font-size: 0.7em;
+		font-style: italic;
+		background-color: white;
+		}
+
+        /*forces table background color for editting information*/
+	#skills table.editform,td.editform,tr.editform,th.editform{
+		background-color:EEEEEE;
+		}
+
+	/*forces table background color for displaying information*/
+	#skills table.bgndform,td.bgndform,tr.bgndform,th.bgndform{
+		background-color:FFFFFF;
+		}
+
+	/*pagetitle for skills menu*/
+	#SkillsMenu .pagetitle{
+		color: navy;
+		font-size: x-large;
+		font-family: Verdana;
+		font-weight: normal;
+		}

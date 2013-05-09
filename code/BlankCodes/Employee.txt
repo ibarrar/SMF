@@ -1,0 +1,403 @@
+using System;
+using System.Data;
+using System.Collections;
+
+namespace SmfRewriteProject
+{
+	/// <summary>
+	/// Employee holds all data for employee information.
+	/// </summary>
+	[System.Serializable()]
+	public class Employee : IStorable
+	{
+		#region " Employee Database Fields "
+		/*
+		sLoginID, sEmpID, sEmpPswd, sLastName, sFirstName,
+		sEmpPosition, sNavYYYY, sNavMMM, sNavDD, sNickName, sGender,
+		sUGSchool, sUGDegree, sUGYear, sGSchool, sGSDegree, sGSYear,
+		sPassportNo, sPassportExp, sValidVisa, sBdayYYYY, sBdayMMM, sBdayDD,
+		sCellNo, sHomeTel, sOtherEmail, sAddressStreet, sAddressCity,
+		sEmpStat, sEmpPermission, sOfc, sAddTechSkills, sAddProductKnowledge,
+		sLastUpdateID, sLastUpdate;
+		*/
+		#endregion
+
+		public Employee(string EmpId)
+		{
+			this.sEmpID = EmpId;
+			this.SqlStrings = new ArrayList();
+			this.Skills = new ArrayList();
+			this.Products = new ArrayList();
+			this.SqlStrings.Clear();
+			this.SqlStrings.Add(
+				"SELECT * FROM T_SKILLS_EMPINFO " +
+				"WHERE sEmpID='" + this.sEmpID + "'");
+			this.SqlStrings.Add(
+				"SELECT * FROM T_SKILLS_EMPSKILLS " +
+				"WHERE sEmpID='" + this.sEmpID + "'");
+			this.SqlStrings.Add(
+				"SELECT * FROM T_SKILLS_EMPSUBSYS " +
+				"WHERE sEmpID='" + this.sEmpID + "'");
+		}
+
+
+		public Employee(string sLoginID, string sEmpID, string sEmpPswd, string sLastName, string sFirstName,
+			string sEmpPosition, string sNavYYYY, string sNavMMM, string sNavDD, string sNickName, string sGender,
+			string sUGSchool, string sUGDegree, string sUGYear, string sGSchool, string sGSDegree, string sGSYear,
+			string sPassportNo, string sPassportExp, string sValidVisa, string sBdayYYYY, string sBdayMMM, string sBdayDD,
+			string sCellNo, string sHomeTel, string sOtherEmail, string sAddressStreet, string sAddressCity,
+			string sEmpStat, string sEmpPermission, string sOfc, string sAddTechSkills, string sAddProductKnowledge,
+			string sLastUpdateID, string sLastUpdate, EmployeeSkill[] Skills, EmployeeProductKnowledge[] Products)
+		{
+			this.SqlStrings = new ArrayList();
+			this.sLoginID = sLoginID;
+			this.sEmpID = sEmpID;
+			this.sEmpPswd = sEmpPswd;
+			this.sLastName = sLastName;
+			this.sFirstName = sFirstName;
+			this.sEmpPosition = sEmpPosition;
+			this.sNavYYYY = sNavYYYY;
+			this.sNavMMM = sNavMMM;
+			this.sNavDD = sNavDD;
+			this.sNickName = sNickName;
+			this.sGender = sGender;
+			this.sUGSchool = sUGSchool;
+			this.sUGDegree = sUGDegree;
+			this.sUGYear = sUGYear;
+			this.sGSchool = sGSchool;
+			this.sGSDegree = sGSDegree;
+			this.sGSYear = sGSYear;
+			this.sGSYear = sGSYear;
+			this.sPassportNo = sPassportNo;
+			this.sPassportExp = sPassportExp;
+			this.sValidVisa = sValidVisa;
+			this.sBdayYYYY = sBdayMMM;
+			this.sBdayDD = sBdayDD;
+			this.sCellNo = sCellNo;
+			this.sHomeTel = sHomeTel;
+			this.sOtherEmail = sOtherEmail;
+			this.sAddressStreet = sAddressStreet;
+			this.sAddressCity = sAddressCity;
+			this.sEmpStat = sEmpStat;
+			this.sEmpPermission = sEmpPermission;
+			this.sOfc = sOfc;
+			this.sAddTechSkills = sAddTechSkills;
+			this.sAddProductKnowledge = sAddProductKnowledge;
+			this.sLastUpdateID = sLastUpdateID;
+			this.sLastUpdate = sLastUpdate;
+			this.Skills = new ArrayList(Skills);
+			this.Products = new ArrayList(Products);
+		}
+
+
+		public Employee(string sLoginID, string sEmpID, string sEmpPswd, string sLastName, string sFirstName,
+			string sEmpPosition, string sNavYYYY, string sNavMMM, string sNavDD, string sNickName, string sGender,
+			string sUGSchool, string sUGDegree, string sUGYear, string sGSchool, string sGSDegree, string sGSYear,
+			string sPassportNo, string sPassportExp, string sValidVisa, string sBdayYYYY, string sBdayMMM, string sBdayDD,
+			string sCellNo, string sHomeTel, string sOtherEmail, string sAddressStreet, string sAddressCity,
+			string sEmpStat, string sEmpPermission, string sOfc, string sAddTechSkills, string sAddProductKnowledge,
+			string sLastUpdateID, string sLastUpdate)
+		{
+			this.sLoginID = sLoginID;
+			this.sEmpID = sEmpID;
+			this.sEmpPswd = sEmpPswd;
+			this.sLastName = sLastName;
+			this.sFirstName = sFirstName;
+			this.sEmpPosition = sEmpPosition;
+			this.sNavYYYY = sNavYYYY;
+			this.sNavMMM = sNavMMM;
+			this.sNavDD = sNavDD;
+			this.sNickName = sNickName;
+			this.sGender = sGender;
+			this.sUGSchool = sUGSchool;
+			this.sUGDegree = sUGDegree;
+			this.sUGYear = sUGYear;
+			this.sGSchool = sGSchool;
+			this.sGSDegree = sGSDegree;
+			this.sGSYear = sGSYear;
+			this.sGSYear = sGSYear;
+			this.sPassportNo = sPassportNo;
+			this.sPassportExp = sPassportExp;
+			this.sValidVisa = sValidVisa;
+			this.sBdayYYYY = sBdayMMM;
+			this.sBdayDD = sBdayDD;
+			this.sCellNo = sCellNo;
+			this.sHomeTel = sHomeTel;
+			this.sOtherEmail = sOtherEmail;
+			this.sAddressStreet = sAddressStreet;
+			this.sAddressCity = sAddressCity;
+			this.sEmpStat = sEmpStat;
+			this.sEmpPermission = sEmpPermission;
+			this.sOfc = sOfc;
+			this.sAddTechSkills = sAddTechSkills;
+			this.sAddProductKnowledge = sAddProductKnowledge;
+			this.sLastUpdateID = sLastUpdateID;
+			this.sLastUpdate = sLastUpdate;
+			this.Skills = new ArrayList();
+			this.Products = new ArrayList();
+		}
+
+
+		public void Add()
+		{
+			this.SqlStrings.Clear();
+			this.SqlStrings.Add("INSERT INTO Employees VALUES(" +
+				"'" + this.sLoginID + "', " +
+				"'" + this.sEmpID + "', " +
+				"'" + this.sEmpPswd + "', " +
+				"'" + this.sLastName + "', " +
+				"'" + this.sFirstName + "', " +
+				"'" + this.sEmpPosition + "', " +
+				"'" + this.sNavYYYY + "', " +
+				"'" + this.sNavMMM + "', " +
+				"'" + this.sNavDD + "', " +
+				"'" + this.sNickName + "', " +
+				"'" + this.sGender + "', " +
+				"'" + this.sUGSchool + "', " +
+				"'" + this.sUGDegree + "', " +
+				"'" + this.sUGYear + "', " +
+				"'" + this.sGSchool + "', " +
+				"'" + this.sGSDegree + "', " +
+				"'" + this.sGSYear + "', " +
+				"'" + this.sPassportNo + "', " +
+				"'" + this.sPassportExp + "', " +
+				"'" + this.sValidVisa + "', " +
+				"'" + this.sBdayYYYY + "', " +
+				"'" + this.sBdayMMM + "', " +
+				"'" + this.sBdayDD + "', " +
+				"'" + this.sCellNo + "', " +
+				"'" + this.sHomeTel + "', " +
+				"'" + this.sOtherEmail + "', " +
+				"'" + this.sAddressStreet + "', " +
+				"'" + this.sAddressCity + "', " +
+				"'" + this.sEmpStat + "', " +
+				"'" + this.sEmpPermission + "', " +
+				"'" + this.sOfc + "', " +
+				"'" + this.sAddTechSkills + "', " +
+				"'" + this.sAddProductKnowledge + "', " +
+				"'" + this.sLastUpdateID + "', " +
+				"'" + this.sLastUpdate + "')");
+			if(this.Skills.Count > 0)
+			{
+				foreach(EmployeeSkill s in this.Skills)
+				{
+					s.Add();
+					this.SqlStrings.Add(s.getQueryRequest()[0].ToString());
+				}
+			}
+			if(this.Products.Count > 0)
+			{
+				foreach(EmployeeProductKnowledge p in this.Products)
+				{
+					p.Add();
+					this.SqlStrings.Add(p.getQueryRequest()[0].ToString());
+				}
+			}
+		}
+
+
+		public void AddSkill(EmployeeSkill skill)
+		{
+			this.SqlStrings.Clear();
+			skill.EmpId = this.EmpId;
+			skill.Add();
+			this.SqlStrings.Add(skill.getNonQueryRequest()[0].ToString());
+			// add to EmployeeSkill array
+			this.Skills.Add(skill);
+		}
+
+
+		public void AddProductKnowledge(EmployeeProductKnowledge product)
+		{
+			this.SqlStrings.Clear();
+			product.EmpId = this.EmpId;
+			product.Add();
+			this.SqlStrings.Add(product.getNonQueryRequest()[0]);
+			// add to EmployeeProductKnowledge array
+			this.Products.Add(product);
+		}
+		
+
+		public void Modify(string UserName, string Password, 
+			string FirstName, string LastName, int Age)
+		{
+			this.SqlStrings.Clear();
+			if(!FirstName.Equals(""))
+				this.FirstName = FirstName;
+			if(!LastName.Equals(""))
+				this.LastName = LastName;
+			if(Age > 0)
+				this.Age = Age;
+			if(!UserName.Equals(""))
+				this.UserName = UserName;
+			if(!Password.Equals(""))
+				this.Password = Password;
+			this.SqlStrings.Add(
+				"UPDATE Employees SET " +
+				"Employees.FirstName='" + this.FirstName + "', " +
+				"Employees.LastName='" + this.LastName + "', " +
+				"Employees.Age=" + this.Age + ", " +
+				"Employees.UserName='" + this.UserName + "', " +
+				"Employees.Password='" + this.Password + "' " +
+				"WHERE Employees.EmployeeId='" + this.EmpId + "'");
+		}
+
+
+		public void ModifySkill(EmployeeSkill skill)
+		{
+			foreach(EmployeeSkill s in this.Skills)
+			{
+				if(s.SkillName == skill.SkillName)
+				{
+					EmployeeSkill curr = (EmployeeSkill)this.Skills[this.Skills.IndexOf(s)];
+					skill.EmpId = curr.EmpId;
+					this.Skills.Remove(curr);
+					break;
+				}
+			}
+			this.Skills.Add(skill);
+			this.SqlStrings.Clear();
+			skill.Modify();
+			this.SqlStrings.Add(skill.getNonQueryRequest()[0].ToString());
+		}
+
+
+		public void ModifyProductKnowledge(EmployeeProductKnowledge product)
+		{
+			foreach(EmployeeProductKnowledge p in this.Products)
+			{
+				if(p.ProductName == product.ProductName)
+				{
+					EmployeeProductKnowledge curr = (EmployeeProductKnowledge)this.Products[this.Products.IndexOf(p)];
+					product.EmpId = curr.EmpId;
+					this.Products.Remove(curr);
+					break;
+				}
+			}
+			this.Products.Add(product);
+			this.SqlStrings.Clear();
+			product.Modify();
+			this.SqlStrings.Add(product.getNonQueryRequest()[0].ToString());
+		}
+
+
+		public void Delete()
+		{
+			this.SqlStrings.Clear();
+			this.Skills.Clear();
+			this.SqlStrings.Add(
+				"DELETE FROM EmployeeSkills " +
+				"WHERE EmployeeId='" + this.EmpId + "'");
+			this.Products.Clear();
+			this.SqlStrings.Add(
+				"DELETE FROM EmployeeProductKnowledge " +
+				"WHERE EmployeeId='" + this.EmpId + "'");
+			this.SqlStrings.Add(
+				"DELETE FROM Employees " +
+				"WHERE EmployeeId='" + this.EmpId + "'");
+		}
+
+
+		public void DeleteSkill(EmployeeSkill skill)
+		{
+			this.SqlStrings.Clear();
+			skill.EmpId = this.EmpId;
+			skill.Delete();
+			this.SqlStrings.Add(skill.getNonQueryRequest()[0].ToString());
+			// remove item from EmployeeSkills array
+			this.Skills.Remove(skill);
+		}
+
+
+		public void DeleteProductKnowledge(EmployeeProductKnowledge product)
+		{
+			this.SqlStrings.Clear();
+			product.EmpId = this.EmpId;
+			product.Delete();
+			this.SqlStrings.Add(product.getNonQueryRequest()[0].ToString());
+			// remove item from EmployeeProductKnowledge array
+			this.Products.Remove(product);
+		}
+
+
+		public void Fill(DataSet d)
+		{
+			//Usage:
+			// WebAppDataHandler d = new WebAppDataHandler(strSQL);
+			// Employee e = new Employee(ID);
+			// e.Fill(d.QueryRequest(e)); -> populate attributes
+
+			// Result from query on Employee table
+			this.UserName = d.Tables[0].Rows[0][1].ToString();
+			this.Password = d.Tables[0].Rows[0][2].ToString();
+			this.FirstName = d.Tables[0].Rows[0][3].ToString();
+			this.LastName = d.Tables[0].Rows[0][4].ToString();
+			this.Age = int.Parse(d.Tables[0].Rows[0][5].ToString());
+
+			// Result from query on EmployeeSkills table
+			foreach(DataRow r in d.Tables[1].Rows)
+				this.Skills.Add(new EmployeeSkill(r[0].ToString(), r[1].ToString(), this.EmpId));
+
+			// Result from query on EmployeeProductKnowledge table
+			foreach(DataRow r in d.Tables[2].Rows)
+				this.Products.Add(new EmployeeProductKnowledge(r[0].ToString(), r[1].ToString(), this.EmpId));
+		}
+
+
+		public ArrayList getSkills(){return this.Skills;}
+
+		public ArrayList getProducts(){return this.Products;}
+
+
+		#region " IStorable implementation "
+
+		public ArrayList getNonQueryRequest()
+		{
+			return this.SqlStrings;
+		}
+
+
+		public ArrayList getQueryRequest()
+		{
+			return this.SqlStrings;
+		}
+
+
+		public void getNonQueryStoredProc(
+			// Implement for stored procedures
+			out string ProcedureName, out string[] ParamNames, out string[] ParamValues)
+		{
+			ProcedureName = "";
+			ParamNames = new string[]{"1", "2"};
+			ParamValues = new string[]{"1", "2"};
+		}
+
+
+		public void getQueryStoredProc(
+			// Implement for stored procedures
+			out string ProcedureName, out string[] ParamNames, out string[] ParamValues)
+		{
+			ProcedureName = "";
+			ParamNames = new string[]{"1", "2"};
+			ParamValues = new string[]{"1", "2"};
+		}
+        
+		#endregion
+
+		#region " Employee Attributes "
+
+		private ArrayList SqlStrings;
+		private string sLoginID, sEmpID, sEmpPswd, sLastName, sFirstName,
+			sEmpPosition, sNavYYYY, sNavMMM, sNavDD, sNickName, sGender,
+			sUGSchool, sUGDegree, sUGYear, sGSchool, sGSDegree, sGSYear,
+			sPassportNo, sPassportExp, sValidVisa, sBdayYYYY, sBdayMMM, sBdayDD,
+			sCellNo, sHomeTel, sOtherEmail, sAddressStreet, sAddressCity,
+			sEmpStat, sEmpPermission, sOfc, sAddTechSkills, sAddProductKnowledge,
+			sLastUpdateID, sLastUpdate;
+		private ArrayList Skills;
+		private ArrayList Products;
+
+		#endregion
+
+	}
+}

@@ -1,0 +1,23 @@
+To make a new page:
+
+1. Add a new WebForm to the project and name the page based on the page name indicated
+   on Web.Config if the new page is an entry point to a different part of the site.
+   Otherwise, if the form only links to a subset of pages, simply assign any appropriate
+   name for the page.
+   
+2. Go to the HTML view of the WebForm.
+
+3. Open and copy the contents of HTMLPageLayout.txt under the BlankCodes folder.
+
+4. Replace the HTML code on the new WebForm with the code copied from HTMLPageLayout.txt
+   but retain the "Page" declaration line (first line), i.e. <%@Page language="C#" .... %>
+
+5. Open the codebehind page of the WebForm and change the base class System.Web.UI.Page to
+   ViewController
+   
+6. For codes you need to put on the Page_Load function, you must place those instead on the
+   the OnPreRender function.  To override ViewController.OnPreRender(), override OnPreRender
+   by writing a new function - type override, then space, then select OnPreRender on the
+   intellisense list.
+   
+   CHECK THE DOCUMENT BlankCodeBehind.txt UNDER BlankCodes folder FOR DETAILS.

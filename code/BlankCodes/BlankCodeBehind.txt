@@ -1,0 +1,28 @@
+	
+	// Pages on the SMF web site must be derived from the ViewController class.
+	// The ViewController class is derived from System.Web.UI.Page and implements
+	// the necessary authentication and error handling functions for the site.
+	// Please check the settings on Web.Config to modify the behavior of the
+	// authentication and error handling functions.
+	
+	// Pages must be decladed using the following format:
+	
+	public class _pageClassName : ViewController{
+	
+		protected override void OnPreRender(EventArgs e){
+			// place code from Page_Load here...
+		}
+	}
+	
+	
+	Order of Execution
+	------------------
+	
+	DerivedPage.Page_Load ---> BasePage.OnLoad ---> 
+	
+	NOTE: Placing your page initialization process on OnPreRender function
+	ensures that the initialization code on ViewController is executed before
+	the derived page.  When pages are loaded, the first function excuted is the
+	Page_Load of the DERIVED page before the OnLoad of the BASE page.  After the
+	execution of the OnLoad function on the BASE page, the process then runs the
+	code on OnPreRender.

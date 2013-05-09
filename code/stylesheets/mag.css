@@ -1,0 +1,146 @@
+/*** MSDNMag***/
+
+body
+{
+	background:#ffffff;
+	font-family:verdana,arial,helvetica;
+	margin:0px;
+}
+
+div.clsDocBody
+{
+	margin:0px;
+	padding-left: 10px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 10px;
+}
+
+div.clsText
+{
+	margin:10px;
+}
+
+UL LI
+{
+	line-height:1.2em;
+}
+
+TH
+{
+    FONT-WEIGHT: bold;
+    background-Color:#99ccff;
+}
+PRE, PRE.clsCode
+{
+    font-size:90%;
+    font-family:'courier new',courier,serif;
+}
+
+
+/*** copyright file***/
+A.clsBackTop,
+A.clsBackTop:visited {
+	margin-top:10px; margin-bottom:0px;
+	padding-bottom:0px;
+	font-size:90%;
+	color: #003399;
+}
+
+/*** article classes ***/
+.articletext
+{
+	vertical-align:top;
+}
+SPAN.dropcap
+{
+    FONT-SIZE: 225%;
+    COLOR: #cc3300;
+    FONT-WEIGHT: bold;
+}
+SPAN.QAcap
+{
+    FONT-SIZE: 140%;
+    COLOR: #cc3300;
+    FONT-WEIGHT: bold;
+}
+SPAN.clsLevel
+{
+    COLOR: #ffffff;
+    FONT-WEIGHT: bold;
+}
+SPAN.clsSum
+{
+    COLOR: #000080;
+    FONT-WEIGHT: bold;
+}
+.clsHead
+{
+    COLOR: #008080;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 160%;
+    LINE-HEIGHT: 2;
+}
+.clsSubhead
+{
+    COLOR: #000080;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 115%;
+}
+SPAN.clsSmHead {
+	color:#008080;
+	FONT-WEIGHT:bold;
+	FONT-SIZE:115%;
+}
+SPAN.clsBio
+{
+    FONT-SIZE: 90%;
+}
+SPAN.clsInfo
+{
+    FONT-SIZE: 90%;
+}
+.clsGloss {
+	color:#000080;
+	FONT-WEIGHT:bold;
+}
+
+/*** default pages ***/
+TD.clsLND
+{
+    COLOR: red;
+    LINE-HEIGHT: 1
+}
+SPAN.functionbartext
+{
+    COLOR: #ffffff;
+}
+SPAN.st
+{
+    FONT-WEIGHT: bold;
+}
+SPAN.category
+{
+    COLOR: #ffffff;
+    FONT-WEIGHT: bold;
+    VERTICAL-ALIGN:top;
+}
+SPAN.pd
+{
+    COLOR: #008080;
+}
+
+/*** Figure Tags ***/
+.clsFigs {
+	FONT-WEIGHT:bold;
+}
+.clsFigure {
+	FONT-WEIGHT:bold;
+}
+.clsCap {
+	FONT-WEIGHT:bold;
+	color:#000080
+}
+.clsCaptxt {
+	color:#000080
+}

@@ -1,0 +1,572 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D063E921-687A-454E-98DB-FD8050C64968}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>SmfRewriteProject</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SmfRewriteProject</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmpCatalogue.aspx.cs">
+      <DependentUpon>EmpCatalogue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmpCatalogue.aspx.designer.cs">
+      <DependentUpon>EmpCatalogue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="error.aspx.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="error.aspx.designer.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IndSummary.aspx.cs">
+      <DependentUpon>IndSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Libraries\IsNumeric.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Libraries\SMFLibrary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NameList.aspx.cs">
+      <DependentUpon>NameList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NameList.aspx.designer.cs">
+      <DependentUpon>NameList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="skillsinfo_advancedsearch.aspx.cs">
+      <DependentUpon>skillsinfo_advancedsearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="skillsinfo_advancedsearch.aspx.designer.cs">
+      <DependentUpon>skillsinfo_advancedsearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SkillsRepSummary.aspx.cs">
+      <DependentUpon>SkillsRepSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillsRepSummary.aspx.designer.cs">
+      <DependentUpon>SkillsRepSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="skills_adminprod.aspx.cs">
+      <DependentUpon>skills_adminprod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="skills_admintech.aspx.cs">
+      <DependentUpon>skills_admintech.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="skills_advancedsearch.aspx.cs">
+      <DependentUpon>skills_advancedsearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="skills_advancedsearch.aspx.designer.cs">
+      <DependentUpon>skills_advancedsearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="skills_changepassword.aspx.cs">
+      <DependentUpon>skills_changepassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="skills_changepassword.aspx.designer.cs">
+      <DependentUpon>skills_changepassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="skills_editempprofiles.aspx.cs">
+      <DependentUpon>skills_editempprofiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="skills_editempprofiles.aspx.designer.cs">
+      <DependentUpon>skills_editempprofiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="skills_editprofile.aspx.cs">
+      <DependentUpon>skills_editprofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="skills_empinfo.aspx.cs">
+      <DependentUpon>skills_empinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="skills_empprofiles.aspx.cs">
+      <DependentUpon>skills_empprofiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="skills_empprofiles.aspx.designer.cs">
+      <DependentUpon>skills_empprofiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="skills_forgotpassword.aspx.cs">
+      <DependentUpon>skills_forgotpassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="skills_forgotpassword.aspx.designer.cs">
+      <DependentUpon>skills_forgotpassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="skills_forgotpwd.aspx.cs">
+      <DependentUpon>skills_forgotpwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="skills_forgotpwd.aspx.designer.cs">
+      <DependentUpon>skills_forgotpwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="skills_indsummary.aspx.cs">
+      <DependentUpon>skills_indsummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="skills_menu.aspx.cs">
+      <DependentUpon>skills_menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="skills_mycert.aspx.cs">
+      <DependentUpon>skills_mycert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="skills_myprofile.aspx.cs">
+      <DependentUpon>skills_myprofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="skills_myskill.aspx.cs">
+      <DependentUpon>skills_myskill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="skills_repdetailed.aspx.cs">
+      <DependentUpon>skills_repdetailed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="skills_repskills.aspx.cs">
+      <DependentUpon>skills_repskills.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="skills_repvisa.aspx.cs">
+      <DependentUpon>skills_repvisa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="skills_repvisa.aspx.designer.cs">
+      <DependentUpon>skills_repvisa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SmfClasses\Certification.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SmfClasses\Dbase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SmfClasses\Employee.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SmfClasses\EmployeeList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SmfClasses\ExtractExcel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SmfClasses\IDBAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SmfClasses\IReporter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SmfClasses\IStorable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SmfClasses\ProdSkill.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SmfClasses\ProductSkills.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SmfClasses\ReportGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SmfClasses\Skill.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SmfClasses\SkillCode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SmfClasses\SkillType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SmfClasses\Teams.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SmfClasses\TechnicalSkills.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SmfClasses\TechSkill.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SmfIndSummaryView.ascx.cs">
+      <DependentUpon>SmfIndSummaryView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SmfReportTab.ascx.cs">
+      <DependentUpon>SmfReportTab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SmfTopNavButtons.ascx.cs">
+      <DependentUpon>SmfTopNavButtons.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebClasses\HashGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebClasses\HttpErrorHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebClasses\Symmetric.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebClasses\ViewController.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebClasses\ViewController_Old1.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebClasses\WebAppDataHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="window_skills_indsummary.aspx.cs">
+      <DependentUpon>window_skills_indsummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Content Include="bin\Interop.Excel.dll" />
+    <Content Include="bin\Interop.Microsoft.Office.Core.dll" />
+    <Content Include="bin\Interop.Office.dll" />
+    <Content Include="bin\Interop.VBIDE.dll" />
+    <Content Include="bin\SMF Rewrite.dll" />
+    <Content Include="bin\SMF Rewrite.pdb" />
+    <Content Include="bin\SmfRewriteProject.dll" />
+    <Content Include="bin\SmfRewriteProject.pdb" />
+    <Content Include="BlankCodes\BlankCodeBehind.txt" />
+    <Content Include="BlankCodes\Employee.txt" />
+    <Content Include="BlankCodes\HtmlPageLayout.txt" />
+    <Content Include="BlankCodes\instructions.txt" />
+    <Content Include="default.aspx" />
+    <Content Include="EmpCatalogue.aspx" />
+    <Content Include="error.aspx" />
+    <Content Include="Global.asax">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="images\icon_calendar.gif" />
+    <Content Include="images\next.gif" />
+    <Content Include="images\prev.gif" />
+    <Content Include="images\skills_admin.gif" />
+    <Content Include="images\skills_home.gif" />
+    <Content Include="images\skills_logout.gif" />
+    <Content Include="images\skills_main.gif" />
+    <Content Include="images\skills_myown.gif" />
+    <Content Include="IndSummary.aspx" />
+    <Content Include="NameList.aspx" />
+    <Content Include="skillsinfo_advancedsearch.aspx" />
+    <Content Include="SkillsRepSummary.aspx" />
+    <Content Include="skills_adminprod.aspx" />
+    <Content Include="skills_adminteam.aspx" />
+    <Content Include="skills_admintech.aspx" />
+    <Content Include="skills_advancedsearch.aspx" />
+    <Content Include="skills_changepassword.aspx" />
+    <Content Include="skills_editempprofiles.aspx" />
+    <Content Include="skills_editprofile.aspx" />
+    <Content Include="skills_empinfo.aspx" />
+    <Content Include="skills_empprofiles.aspx" />
+    <Content Include="skills_forgotpassword.aspx" />
+    <Content Include="skills_forgotpwd.aspx" />
+    <Content Include="skills_indsummary.aspx" />
+    <Content Include="skills_menu.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="skills_mycert.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="skills_myprofile.aspx" />
+    <Content Include="skills_myskill.aspx" />
+    <Content Include="skills_repdetailed.aspx" />
+    <Content Include="skills_repskills.aspx" />
+    <Content Include="skills_repvisa.aspx" />
+    <Content Include="skills_stylesheet.css" />
+    <Content Include="SmfIndSummaryView.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="SmfReportTab.ascx" />
+    <Content Include="SmfTopNavButtons.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="stylesheets\Copy of style.css" />
+    <Content Include="stylesheets\header.css" />
+    <Content Include="stylesheets\HMenu.css" />
+    <Content Include="stylesheets\mag.css" />
+    <Content Include="stylesheets\msdn.css" />
+    <Content Include="stylesheets\Navigator.css" />
+    <Content Include="stylesheets\skills_stylesheet.css" />
+    <Content Include="stylesheets\smf_style.css" />
+    <Content Include="stylesheets\Splash.css" />
+    <Content Include="stylesheets\style1.css" />
+    <Content Include="stylesheets\style2.css" />
+    <Content Include="Web.config" />
+    <Content Include="window_skills_indsummary.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <EmbeddedResource Include="default.aspx.resx">
+      <DependentUpon>default.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpCatalogue.aspx.resx">
+      <DependentUpon>EmpCatalogue.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="error.aspx.resx">
+      <DependentUpon>error.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IndSummary.aspx.resx">
+      <DependentUpon>IndSummary.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NameList.aspx.resx">
+      <DependentUpon>NameList.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="skillsinfo_advancedsearch.aspx.resx">
+      <DependentUpon>skillsinfo_advancedsearch.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SkillsRepSummary.aspx.resx">
+      <DependentUpon>SkillsRepSummary.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="skills_admintech.aspx.resx">
+      <DependentUpon>skills_admintech.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="skills_advancedsearch.aspx.resx">
+      <DependentUpon>skills_advancedsearch.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="skills_changepassword.aspx.resx">
+      <DependentUpon>skills_changepassword.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="skills_editempprofiles.aspx.resx">
+      <DependentUpon>skills_editempprofiles.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="skills_editprofile.aspx.resx">
+      <DependentUpon>skills_editprofile.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="skills_empinfo.aspx.resx">
+      <DependentUpon>skills_empinfo.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="skills_empprofiles.aspx.resx">
+      <DependentUpon>skills_empprofiles.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="skills_forgotpassword.aspx.resx">
+      <DependentUpon>skills_forgotpassword.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="skills_forgotpwd.aspx.resx">
+      <DependentUpon>skills_forgotpwd.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="skills_indsummary.aspx.resx">
+      <DependentUpon>skills_indsummary.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="skills_menu.aspx.resx">
+      <DependentUpon>skills_menu.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="skills_mycert.aspx.resx">
+      <DependentUpon>skills_mycert.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="skills_myprofile.aspx.resx">
+      <DependentUpon>skills_myprofile.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="skills_myskill.aspx.resx">
+      <DependentUpon>skills_myskill.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="skills_repdetailed.aspx.resx">
+      <DependentUpon>skills_repdetailed.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="skills_repskills.aspx.resx">
+      <DependentUpon>skills_repskills.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="skills_repvisa.aspx.resx">
+      <DependentUpon>skills_repvisa.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmfIndSummaryView.ascx.resx">
+      <DependentUpon>SmfIndSummaryView.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmfReportTab.ascx.resx">
+      <DependentUpon>SmfReportTab.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmfTopNavButtons.ascx.resx">
+      <DependentUpon>SmfTopNavButtons.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="window_skills_indsummary.aspx.resx">
+      <DependentUpon>window_skills_indsummary.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="SMF Site Flow.doc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+    <Folder Include="Reports\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58669</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/SmfRewriteProject</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
